@@ -8,12 +8,22 @@
 </head>
 <body>
 
+<button id="btn1">Click Here</button> <br><br>
+<div id="show">Content Will Show Here</div>
 
-  
+
+
+
   <script>
+
 $(document).ready(function () {
-    
+    $("#btn1").click(function(){
+        $("#show").load("mytextfile.txt");
+    })
 });
+
+
   </script>
+ 
 </body>
 </html>
