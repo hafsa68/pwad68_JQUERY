@@ -4,5 +4,8 @@ $districts = array(1=>["Narsingdi","Narayanganj"],2=>["Cumilla","Noyakhali"],3=>
 
 $id =  $_POST['id'];
 
-print_r($districts[$id]);
+$lists = ($districts[$id]);
+foreach($lists as $list){
+    echo "<option>". $list ."</option>";
+}
 ?>
